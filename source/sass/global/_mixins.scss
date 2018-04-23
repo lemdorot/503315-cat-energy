@@ -1,0 +1,14 @@
+@mixin titletext($size, $line) {
+  font-size: $size;
+  line-height: $line;
+  font-weight: 400;
+  color: $color-black;
+}
+
+@mixin copytext($size, $line) {
+  font-size: $size;
+  line-height: $line;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-copy;
+}

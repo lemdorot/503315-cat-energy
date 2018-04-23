@@ -1,0 +1,7 @@
+.process__heading {
+  @include titletext(36px,60px);
+}
+
+.process__text {
+  @include copytext(14px,18px);
+}

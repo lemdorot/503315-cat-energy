@@ -1,0 +1,14 @@
+.program-card__title {
+  @include titletext(24px,37px);
+  text-transform: uppercase;
+}
+
+.program-card__description {
+  @include copytext(14px,18px);
+}
+
+.program-card__link {
+  @include titletext(16px,16px);
+  text-decoration: none;
+  text-transform: uppercase;
+}

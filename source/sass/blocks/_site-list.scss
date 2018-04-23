@@ -1,0 +1,11 @@
+.site-list {
+  list-style: none;
+  text-align: center;
+}
+
+.site-list__link {
+  @include titletext(20px,20px);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}

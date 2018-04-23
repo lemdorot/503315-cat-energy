@@ -1,0 +1,22 @@
+.hero {
+  color: #ffffff;
+  background-color: $color-primary;
+  text-align: center;
+}
+
+.hero__heading {
+  @include titletext(36px, 36px);
+  font-weight: 400;
+  color: inherit;
+}
+
+.hero__subline {
+  @include titletext(14px, 14px);
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.hero__btn {
+  font-size: 14px;
+  line-height: 18px;
+}

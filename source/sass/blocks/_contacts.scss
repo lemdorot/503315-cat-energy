@@ -1,0 +1,12 @@
+.contacts__title {
+  @include titletext(16px,20px);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include copytext(14px,20px);
+}
+
+.contacts__map-content {
+  border: none;
+}

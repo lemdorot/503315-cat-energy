@@ -1,0 +1,9 @@
+.facts__value {
+  @include titletext(24px,24px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.facts__type {
+  @include copytext(12px,12px);
+}

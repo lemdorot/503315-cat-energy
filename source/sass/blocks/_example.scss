@@ -1,0 +1,12 @@
+.example__heading {
+  @include titletext(36px,60px);
+}
+
+.example__text {
+  @include copytext (14px,18px);
+}
+
+.example__expenses {
+  @include titletext(14px,20px);
+  text-transform: uppercase;
+}

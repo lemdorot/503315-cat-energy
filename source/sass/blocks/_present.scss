@@ -1,0 +1,9 @@
+.present {
+  background-color: $color-primary;
+  text-align: center;
+}
+
+.present__text {
+  @include copytext(16px,18px);
+  color: #ffffff;
+}

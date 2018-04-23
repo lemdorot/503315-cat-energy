@@ -1,0 +1,19 @@
+.btn {
+  @include titletext(16px, 20px);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: inherit;
+  border: none;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  &--green {
+    color: #ffffff;
+    background-color: $color-primary;
+  }
+
+  &--gray {
+    color: $color-copy;
+    background-color: $color-background;
+  }
+}
