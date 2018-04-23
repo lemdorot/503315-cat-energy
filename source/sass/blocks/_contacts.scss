@@ -1,3 +1,11 @@
+.contacts {
+  background-color: $color-background;
+
+  &--index {
+    background-color: #ffffff;
+  }
+}
+
 .contacts__title {
   @include titletext(16px,20px);
   text-transform: uppercase;
