@@ -1,0 +1,14 @@
+.additional {
+  border: none;
+}
+
+.additional__title {
+  @include titletext(24px,24px);
+}
+
+.additional__label {
+  @include titletext(16px,18px);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 26px;
+}

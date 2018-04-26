@@ -1,0 +1,13 @@
+.present {
+  @include content-center;
+  background-color: $color-primary;
+  text-align: center;
+  padding: 65px 70px 50px;
+  margin-top: 39px;
+  margin-bottom: 37px;
+}
+
+.present__text {
+  @include copytext(16px,18px);
+  color: #ffffff;
+}

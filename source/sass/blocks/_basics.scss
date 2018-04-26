@@ -1,0 +1,19 @@
+.basics {
+  border: none;
+  border-bottom: 1px solid $color-menuline;
+}
+
+.basics__label {
+  @include titletext(16px,18px);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: block; // remove later?
+}
+
+.basics__input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 15px;
+}

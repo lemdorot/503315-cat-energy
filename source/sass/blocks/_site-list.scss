@@ -1,0 +1,25 @@
+.site-list {
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid $color-menuline;
+}
+
+.site-list__item {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-top: 1px solid $color-menuline;
+}
+
+.site-list__link {
+  @include titletext(20px,20px);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-list__link:link,
+.site-list__link:visited {
+  &:hover {
+    opacity: 0.6;
+  }
+}
