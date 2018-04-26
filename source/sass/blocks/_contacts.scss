@@ -1,9 +1,14 @@
 .contacts {
   background-color: $color-background;
+  padding-top: 32px;
 
   &--index {
     background-color: #ffffff;
   }
+}
+
+.contacts__card {
+  margin-bottom: 32px;
 }
 
 .contacts__title {
@@ -17,4 +22,6 @@
 
 .contacts__map-content {
   border: none;
+  width: 100%;
+  height: 364px;
 }

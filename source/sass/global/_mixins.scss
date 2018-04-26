@@ -12,3 +12,9 @@
   font-weight: 400;
   color: $color-copy;
 }
+
+@mixin content-center {
+  min-width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,5 +1,11 @@
+.form-main__form {
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+
 .form-main__heading {
   @include titletext(36px,60px);
+  margin-bottom: 23px;
 }
 
 .form-main__subline {

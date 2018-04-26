@@ -1,11 +1,3 @@
-.request-form__additional,
-.request-form__basics,
-.request-form__comment,
-.request-form__contacts,
-.request-form__goal {
-  border: none;
-}
-
 .request-form__footnote {
   @include copytext(14px,16px);
 }

@@ -1,18 +1,33 @@
 .program-card {
+
+  margin-bottom: 20px;
+
   background-color: $color-background;
+  padding: 25px;
 }
 
 .program-card__title {
   @include titletext(24px,37px);
   text-transform: uppercase;
+  margin-bottom: 24px;
+  padding-left: 69px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $color-primary;
+    border-radius: 50%;
+  }
 }
 
 .program-card__description {
   @include copytext(14px,18px);
-}
-
-.program-card__link {
-  @include titletext(16px,16px);
-  text-decoration: none;
-  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $color-line;
 }

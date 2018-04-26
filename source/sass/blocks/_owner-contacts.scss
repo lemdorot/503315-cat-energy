@@ -1,3 +1,13 @@
+.owner-contacts {
+  border: none;
+  padding-top: 30px;
+}
+
+.owner-contacts__content-center {
+  @include content-center;
+  padding-top: 30px;
+}
+
 .owner-contacts__title {
   @include titletext(24px,24px);
 }
@@ -5,6 +15,8 @@
 .owner-contacts__label {
   @include titletext(16px,18px);
   text-transform: uppercase;
+  margin-bottom: 14px;
+  display: block; // remove later?
 }
 
 .owner-contacts__input {
@@ -12,4 +24,5 @@
   font-size: inherit;
   color: inherit;
   text-transform: uppercase;
+  padding: 15px;
 }

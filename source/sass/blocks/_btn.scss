@@ -6,14 +6,35 @@
   border: none;
   padding-top: 13px;
   padding-bottom: 13px;
+  display: block;
+}
 
-  &--green {
-    color: #ffffff;
-    background-color: $color-primary;
+.btn--green {
+  color: #ffffff;
+  background-color: $color-primary;
+
+  &:focus,
+  &:hover {
+    background-color: $color-primary-dark;
   }
 
-  &--gray {
-    color: $color-copy;
-    background-color: $color-background;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-primary-dark;
+  }
+}
+
+.btn--gray {
+  color: $color-copy;
+  background-color: $color-background;
+
+  &:focus,
+  &:hover {
+    background-color: $color-menuline;
+  }
+
+  &:active {
+    color: rgba($color-copy, 0.3);
+    background-color: $color-menuline;
   }
 }

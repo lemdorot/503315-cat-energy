@@ -1,9 +1,16 @@
 .example {
   background-color: $color-background;
+  padding-top: 34px;
+  padding-bottom: 40px;
+}
+
+.example__content-center {
+  @include content-center;
 }
 
 .example__heading {
   @include titletext(36px,60px);
+  margin-bottom: 17px;
 }
 
 .example__text {

@@ -1,3 +1,9 @@
+.product-card {
+  border-top: 1px solid $color-menuline;
+  min-width: 320px;
+  padding: 26px 20px 25px;
+}
+
 .product-card__title {
   @include titletext(16px,20px);
   text-transform: uppercase;

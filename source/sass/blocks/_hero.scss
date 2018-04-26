@@ -1,19 +1,27 @@
 .hero {
   color: #ffffff;
-  background-color: $color-primary;
+  background: linear-gradient(to top, #ffffff, #ffffff 195px, $color-primary 195px);
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+
+.hero__content-center {
+  @include content-center;
 }
 
 .hero__heading {
   @include titletext(36px, 36px);
   font-weight: 400;
   color: inherit;
+  margin-bottom: 11px;
 }
 
 .hero__subline {
   @include titletext(14px, 14px);
   text-transform: uppercase;
   color: inherit;
+  margin-bottom: 303px;
 }
 
 .hero__btn {

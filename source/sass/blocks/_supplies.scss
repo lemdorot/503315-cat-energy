@@ -1,5 +1,27 @@
+.supplies__heading-wrapper {
+  margin-bottom: 17px;
+}
+
 .supplies__heading-text {
   @include titletext(24px,24px);
+}
+
+.supplies__content-center {
+  @include content-center;
+}
+
+.supplies__list {
+  list-style: none;
+}
+
+.supplies__item {
+  border-top: 1px solid $color-line;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  &:last-child {
+    border-bottom: 1px solid $color-line;
+  }
 }
 
 .supplies__title {
