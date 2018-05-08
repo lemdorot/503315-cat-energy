@@ -1,4 +1,33 @@
+.slider {
+  @include tablet {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
 .slider__label {
   @include titletext(16px,20px);
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted $color-line;
+  };
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__scale {
+  @include tablet {
+    width: 428px;
+    height: 6px;
+    background-color: $color-menuline;
+    border-radius: 3px;
+  };
 }

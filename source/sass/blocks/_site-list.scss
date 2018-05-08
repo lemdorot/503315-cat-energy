@@ -2,12 +2,25 @@
   list-style: none;
   text-align: center;
   border-bottom: 1px solid $color-menuline;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    border: none;
+  };
 }
 
 .site-list__item {
   padding-top: 26px;
   padding-bottom: 26px;
   border-top: 1px solid $color-menuline;
+
+  @include tablet {
+    border: none;
+    margin-left: 36px;
+    padding: 0;
+  }
 }
 
 .site-list__link {
@@ -15,11 +28,21 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 55px;
+    font-weight: 400;
+    padding-bottom: 14px;
+  }
 }
 
 .site-list__link:link,
 .site-list__link:visited {
   &:hover {
     opacity: 0.6;
+    @include tablet {
+      border-bottom: 2px solid $color-primary;
+    };
   }
 }

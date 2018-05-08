@@ -1,3 +1,16 @@
 .page-footer {
   background-color: $color-background;
+
+}
+
+.page-footer__content-center {
+  @include content-center;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
 }

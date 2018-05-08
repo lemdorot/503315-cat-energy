@@ -3,6 +3,10 @@
   border-bottom: 1px solid $color-menuline;
 }
 
+.basics__content-center {
+  @include content-center;
+}
+
 .basics__label {
   @include titletext(16px,18px);
   text-transform: uppercase;

@@ -1,3 +1,9 @@
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
 @mixin titletext($size, $line) {
   font-size: $size;
   line-height: $line;
@@ -14,7 +20,11 @@
 }
 
 @mixin content-center {
-  min-width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 30px;
+  };
 }

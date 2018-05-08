@@ -2,6 +2,10 @@
   background-color: $color-background;
   padding-top: 34px;
   padding-bottom: 40px;
+
+  @include tablet {
+    background: linear-gradient(to top, $color-background 50%, #ffffff 50%);
+  }
 }
 
 .example__content-center {
@@ -11,13 +15,47 @@
 .example__heading {
   @include titletext(36px,60px);
   margin-bottom: 17px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 73px;
+  }
 }
 
 .example__text {
   @include copytext (14px,18px);
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+}
+
+.example__stats-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__expenses {
   @include titletext(14px,20px);
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.example__rub {
+  margin-top: 12px;
 }

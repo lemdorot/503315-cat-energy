@@ -2,22 +2,60 @@
   background-color: $color-background;
   padding-top: 32px;
 
+  @include tablet {
+    padding-top: 70px;
+  }
+
   &--index {
     background-color: #ffffff;
   }
 }
 
+.contacts__content-center {
+  @include content-center;
+
+  @include tablet {
+    padding: 0 70px;
+  }
+}
+
 .contacts__card {
   margin-bottom: 32px;
+  display: flex;
+
+  @include tablet {
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts__title {
   @include titletext(16px,20px);
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 160px;
+  }
 }
 
 .contacts__address {
   @include copytext(14px,20px);
+
+  @include tablet {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    max-width: 170px;
+  };
+}
+
+.contacts__city {
+  @include tablet {
+    margin-top: 20px;
+  }
 }
 
 .contacts__map-content {
