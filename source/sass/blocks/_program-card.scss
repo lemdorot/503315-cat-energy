@@ -7,7 +7,13 @@
 
   @include tablet {
     padding: 80px 280px 63px 50px;
-  };
+    position: relative;
+  }
+
+  @include desktop {
+    padding: 80px 60px 65px;
+    max-width: 570px;
+  }
 }
 
 .program-card__title {
@@ -22,7 +28,14 @@
     line-height: 36px;
     padding-left: 0;
     margin-bottom: 33px;
-  };
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 37px;
+    padding-left: 166px;
+    margin-bottom: 80px;
+  }
 
   &::before {
     content: "";
@@ -38,8 +51,15 @@
       width: 200px;
       height: 200px;
       top: 0;
-      left: 392px;
-    };
+      left: 400px;
+    }
+
+    @include desktop {
+      width: 100px;
+      height: 100px;
+      left: 0;
+      top: -30px;
+    }
   }
 }
 
@@ -53,7 +73,13 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
-  };
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
 }
 
 .program-card__link {

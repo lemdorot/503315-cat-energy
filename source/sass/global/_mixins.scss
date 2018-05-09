@@ -4,6 +4,12 @@
   }
 }
 
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
 @mixin titletext($size, $line) {
   font-size: $size;
   line-height: $line;
@@ -25,6 +31,10 @@
   margin: 0 auto;
 
   @include tablet {
-    padding: 0 30px;
+    padding: 0 calc((100% - 708px)/2);
+  };
+
+  @include desktop {
+    padding: 0 calc((100% - 1220px)/2);
   };
 }

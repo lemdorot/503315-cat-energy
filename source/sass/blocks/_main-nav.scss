@@ -5,4 +5,15 @@
     align-items: center;
     padding: 24px 30px 0;
   }
+
+  @include desktop {
+    padding: 55px calc((100% - 1220px)/2);
+  }
+}
+
+.main-nav--inverse {
+  @include desktop {
+    background-image: linear-gradient(to right, #ffffff 0, #ffffff calc(50% + 30px), $color-primary calc(50% + 30px), $color-primary 100%);
+    color: #ffffff;
+  }
 }
