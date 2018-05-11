@@ -1,17 +1,55 @@
-.supplies__heading-wrapper {
+.supplies__heading {
+  padding-left: $padding-mobile;
+  border-bottom: 2px solid $color-primary;
+  transform: translateY(-10px);
   margin-bottom: 17px;
+
+  @include tablet {
+    padding-left: $padding-tablet;
+    margin-bottom: 75px;
+  }
+
 }
 
 .supplies__heading-text {
   @include titletext(24px,24px);
+  display: inline-block;
+  background-color: #ffffff;
+  transform: translate(-20px, 10px);
+  padding-left: 20px;
+  padding-right: 24px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 35px;
+    transform: translate(-5px, 10px);
+  }
+
+  @include desktop {
+    padding: 0 40px;
+    transform: translate(-295px, 10px);
+  }
 }
 
 .supplies__content-center {
   @include content-center;
+
+  @include desktop {
+    padding: 0;
+  }
+
+  @include desktop {
+    width: 895px;
+  }
 }
 
 .supplies__list {
   list-style: none;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .supplies__item {
@@ -22,14 +60,84 @@
   &:last-child {
     border-bottom: 1px solid $color-line;
   }
+
+  @include tablet {
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
 .supplies__title {
   @include titletext(16px,16px);
   text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @include tablet {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.supplies__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-grow: 1;
+    max-width: 290px;
+  }
 }
 
 .supplies__amount,
 .supplies__price {
   @include copytext(14px,14px);
+
+  @include tablet {
+    text-align: right;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.supplies__amount {
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.supplies__price {
+  @include tablet {
+    margin-left: 52px;
+  }
+}
+
+.supplies__btn {
+  width: 100%;
+  margin-top: 20px;
+
+  @include desktop {
+    max-width: 245px;
+    margin: 0 0 0 35px;
+  }
 }

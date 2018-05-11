@@ -27,14 +27,14 @@
 
 @mixin content-center {
   width: auto;
-  padding: 0 20px;
+  padding: 0 $padding-mobile;
   margin: 0 auto;
 
   @include tablet {
-    padding: 0 calc((100% - 708px)/2);
+    padding: 0 $padding-tablet;
   };
 
   @include desktop {
-    padding: 0 calc((100% - 1220px)/2);
+    padding: 0 $padding-desktop;
   };
 }

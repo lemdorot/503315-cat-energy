@@ -1,3 +1,38 @@
 .products {
   margin-bottom: 30px;
+
+  @include tablet {
+    @include content-center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.products__item {
+  @include tablet {
+    //min-width: 324px;
+    flex-grow: 1;
+    margin-bottom: 94px;
+  }
+
+  @include desktop {
+    margin-right: 82px;
+  }
+}
+
+.products__item:nth-child(2n-1) {
+  @include tablet {
+    margin-right: 60px;
+  }
+
+  @include desktop {
+    margin-right: 82px;
+  }
+}
+
+.products__item:nth-child(4n) {
+  @include desktop {
+    margin-right: 0;
+  }
 }

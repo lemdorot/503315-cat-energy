@@ -1,4 +1,10 @@
+.copyright {
+  margin-top: 20px;
+}
+
 .copyright__link {
   @include copytext(16px,16px);
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }

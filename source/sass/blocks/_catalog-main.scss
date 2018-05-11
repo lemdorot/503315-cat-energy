@@ -1,4 +1,29 @@
 .catalog-main__heading {
   @include titletext(36px,60px);
+  padding-left: $padding-mobile;
+  margin-top: 24px;
   margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: $padding-tablet;
+  }
+
+  @include desktop {
+    padding-left: $padding-desktop;
+  }
+}
+
+.catalog-main__products {
+  list-style: none;
+}
+
+.catalog-main__wrapper {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+
+    @include content-center;
+  }
 }
