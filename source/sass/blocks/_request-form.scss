@@ -1,3 +1,38 @@
+.request-form__wrapper {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $padding-desktop;
+  }
+}
+
+.request-form__submit-wrapper {
+  @include content-center;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.request-form__btn {
+  width: 100%;
+  margin-bottom: 24px;
+
+  @include tablet {
+    flex-grow: 1;
+    width: auto;
+    margin-right: 60px;
+  }
+}
+
 .request-form__footnote {
   @include copytext(14px,16px);
+  text-align: center;
+  display: block;
+
+  @include tablet {
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: left;
+  }
 }

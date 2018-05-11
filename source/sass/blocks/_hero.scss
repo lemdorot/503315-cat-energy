@@ -4,10 +4,19 @@
   text-align: center;
   padding-top: 32px;
   padding-bottom: 20px;
+
+  @include tablet {
+    background: #ffffff;
+    padding-bottom: 515px;
+  }
 }
 
 .hero__content-center {
   @include content-center;
+
+  @include tablet {
+    padding: 0 120px;
+  }
 }
 
 .hero__heading {
@@ -15,6 +24,12 @@
   font-weight: 400;
   color: inherit;
   margin-bottom: 11px;
+
+  @include tablet {
+    @include titletext(60px, 60px);
+    text-align: left;
+    margin-bottom: 46px;
+  }
 }
 
 .hero__subline {
@@ -22,9 +37,22 @@
   text-transform: uppercase;
   color: inherit;
   margin-bottom: 303px;
+
+  @include tablet {
+    @include titletext(20px, 20px);
+    text-align: left;
+    margin-bottom: 45px;
+  }
 }
 
 .hero__btn {
   font-size: 14px;
   line-height: 18px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px auto;
+    width: 245px;
+  }
 }

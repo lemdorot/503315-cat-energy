@@ -1,13 +1,31 @@
 .present {
-  @include content-center;
   background-color: $color-primary;
   text-align: center;
-  padding: 65px 70px 50px;
-  margin-top: 39px;
-  margin-bottom: 37px;
+  margin: 39px $padding-mobile 37px;
+  position: relative;
+
+  @include tablet {
+    margin: 39px $padding-tablet 37px;
+  }
+
+  @include desktop {
+    margin: 0;
+    padding: 80px 40px 50px;
+    max-width: 245px;
+  }
+}
+
+.present__icon {
+  position: absolute;
 }
 
 .present__text {
   @include copytext(16px,18px);
   color: #ffffff;
+  padding: 190px 60px 50px;
+
+  @include tablet {
+    padding: 70px 122px 70px 420px;
+    text-align: left;
+  }
 }

@@ -1,9 +1,0 @@
-.inline-link {
-  @include titletext(16px,16px);
-  text-decoration: none;
-  text-transform: uppercase;
-
-  &:active {
-    opacity: 0.3;
-  }
-}

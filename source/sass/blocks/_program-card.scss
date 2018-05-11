@@ -4,6 +4,16 @@
 
   background-color: $color-background;
   padding: 25px;
+
+  @include tablet {
+    padding: 80px 280px 63px 50px;
+    position: relative;
+  }
+
+  @include desktop {
+    padding: 80px 60px 65px;
+    max-width: 570px;
+  }
 }
 
 .program-card__title {
@@ -12,6 +22,20 @@
   margin-bottom: 24px;
   padding-left: 69px;
   position: relative;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    margin-bottom: 33px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 37px;
+    padding-left: 166px;
+    margin-bottom: 80px;
+  }
 
   &::before {
     content: "";
@@ -22,6 +46,20 @@
     height: 50px;
     background-color: $color-primary;
     border-radius: 50%;
+
+    @include tablet {
+      width: 200px;
+      height: 200px;
+      top: 0;
+      left: 400px;
+    }
+
+    @include desktop {
+      width: 100px;
+      height: 100px;
+      left: 0;
+      top: -30px;
+    }
   }
 }
 
@@ -30,4 +68,31 @@
   margin-bottom: 20px;
   padding-bottom: 30px;
   border-bottom: 1px solid $color-line;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.program-card__link {
+  @include titletext(16px,16px);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

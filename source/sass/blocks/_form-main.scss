@@ -5,10 +5,36 @@
 
 .form-main__heading {
   @include titletext(36px,60px);
+  margin-top: 32px;
   margin-bottom: 23px;
+  padding-left: $padding-mobile;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: $padding-tablet;
+  }
+
+  @include desktop {
+    padding-left: $padding-desktop;
+    margin-bottom: 55px;
+  }
 }
 
 .form-main__subline {
   @include titletext(14px,18px);
   text-transform: uppercase;
+  padding-left: $padding-mobile;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 54%;
+    padding-left: $padding-tablet-form;
+  }
+
+  @include desktop {
+    padding-left: $padding-desktop;
+    max-width: 440px;
+  }
 }

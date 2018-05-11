@@ -13,9 +13,19 @@ html {
 }
 
 body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
   font-family: "Oswald", sans-serif;
   color: $color-black;
   font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {

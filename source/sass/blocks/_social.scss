@@ -1,0 +1,15 @@
+.social {
+  width: 100%;
+  border-top: 1px solid $color-line;
+  border-bottom: 1px solid $color-line;
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
