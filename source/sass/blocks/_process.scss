@@ -23,7 +23,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 76px;
-  };
+  }
 }
 
 .process__list {
@@ -72,9 +72,8 @@
     @include tablet {
       width: 80px;
       height: 80px;
-    };
+    }
   }
-
 }
 
 .process__item:first-child {

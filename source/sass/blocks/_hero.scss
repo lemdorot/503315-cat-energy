@@ -8,8 +8,7 @@
   @include tablet {
     background: #ffffff;
     padding-bottom: 515px;
-  };
-
+  }
 }
 
 .hero__content-center {
@@ -30,7 +29,7 @@
     @include titletext(60px, 60px);
     text-align: left;
     margin-bottom: 46px;
-  };
+  }
 }
 
 .hero__subline {
@@ -55,5 +54,5 @@
     line-height: 20px;
     padding: 20px auto;
     width: 245px;
-  };
+  }
 }

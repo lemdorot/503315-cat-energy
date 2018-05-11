@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     max-width: 70%;
     border: none;
-  };
+  }
 }
 
 .site-list__item {
@@ -60,10 +60,7 @@
   &:hover {
     opacity: 0.6;
   }
-}
 
-.site-list__link:link,
-.site-list__link:visited {
   &:active {
     opacity: 0.3;
   }

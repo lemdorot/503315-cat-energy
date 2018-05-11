@@ -52,6 +52,7 @@
 
 .comment__input {
   font-family: inherit;
+
   @include titletext(16px,18px);
   text-transform: uppercase;
   padding: 15px 12px 15px 15px;
