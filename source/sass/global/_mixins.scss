@@ -4,6 +4,12 @@
   }
 }
 
+@mixin tablet-only {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: $desktop-width) {
     @content;
@@ -32,9 +38,9 @@
 
   @include tablet {
     padding: 0 $padding-tablet;
-  };
+  }
 
   @include desktop {
     padding: 0 $padding-desktop;
-  };
+  }
 }

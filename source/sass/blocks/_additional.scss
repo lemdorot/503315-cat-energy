@@ -4,6 +4,51 @@
 
 .additional__title {
   @include titletext(24px,24px);
+  padding-left: $padding-mobile;
+  border-bottom: 2px solid $color-primary;
+  transform: translateY(-10px);
+  margin-bottom: 30px;
+
+  @include tablet {
+    padding-left: $padding-tablet-form;
+    transform: translateY(-14px);
+    margin-top: 60px;
+    margin-bottom: 72px;
+  }
+
+  @include desktop {
+    padding-left: $padding-desktop;
+  }
+}
+
+.additional__title-text {
+  background-color: #ffffff;
+  max-width: 180px;
+  display: block;
+  padding: 0 20px;
+  transform: translate(-20px, 10px);
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 300px;
+    padding: 0 40px;
+    transform: translate(-40px, 10px);
+  }
+}
+
+.additional__content-center {
+  @include content-center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+  }
+
+  @include desktop {
+    padding: 0 $padding-desktop;
+  }
 }
 
 .additional__label {
@@ -11,4 +56,15 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 26px;
+  padding-left: 45px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    flex: 1 1 50%;
+  }
+
+  @include desktop {
+    flex-basis: 25%;
+  }
 }

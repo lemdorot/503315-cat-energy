@@ -2,6 +2,18 @@
   border: none;
   border-bottom: 1px solid $color-menuline;
   padding-top: 30px;
+
+  @include tablet {
+    border: 1px solid $color-menuline;
+    margin-left: $padding-tablet-form;
+    border-right: none;
+    margin-top: 58px;
+  }
+
+  @include desktop {
+    margin: 0;
+    border: 1px solid $color-menuline;
+  }
 }
 
 .goal__content-center {
@@ -13,4 +25,10 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 26px;
+  padding-left: 45px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
