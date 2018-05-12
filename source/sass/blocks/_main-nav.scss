@@ -40,10 +40,39 @@
   width: 18px;
   height: 18px;
   background-color: #ffffff;
-  background-image: url("../img/icon-close.svg");
   cursor: pointer;
 
   @include tablet {
     display: none;
   }
+}
+
+.main-nav .main-nav__toggle {
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-nav--open .main-nav__toggle {
+  background-image: url("../img/icon-close.svg");
+}
+
+.main-nav .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav--open .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }

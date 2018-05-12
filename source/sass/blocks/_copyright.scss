@@ -7,4 +7,28 @@
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.copyright__logo {
+  padding-top: 2px;
+  fill: $color-copy;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: $color-primary;
+}
+
+.copyright__link:active .copyright__logo {
+  fill: $color-primary;
+  opacity: 0.5;
+}
+
+.copyright__link:hover {
+  opacity: 0.8;
+}
+
+.copyright__link:active {
+  opacity: 0.6;
 }

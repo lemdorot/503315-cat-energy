@@ -13,6 +13,7 @@
   @include desktop {
     margin: 0;
     border: 1px solid $color-menuline;
+    flex-grow: 1;
   }
 }
 
