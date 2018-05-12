@@ -44,3 +44,40 @@
     padding: 0 $padding-desktop;
   }
 }
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin input {
+  cursor: pointer;
+  height: 45px;
+  padding: 12px;
+  border: 1px solid $color-menuline;
+
+  &:hover {
+    border: 1px solid $color-line;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid $color-black;
+    box-shadow: inset 0 0 0 1px $color-black;
+    outline: none;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border: 1px solid $color-error;
+    box-shadow: inset 0 0 0 1px $color-error;
+    outline: none;
+  }
+}

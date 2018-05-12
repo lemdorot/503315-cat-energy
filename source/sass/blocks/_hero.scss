@@ -1,13 +1,37 @@
 .hero {
   color: #ffffff;
-  background: linear-gradient(to top, #ffffff, #ffffff 195px, $color-primary 195px);
+  background: url("../img/index-can-mobile@1x.png") 50% 72% no-repeat, url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to top, #ffffff, #ffffff 210px, $color-primary-dark 210px);
   text-align: center;
   padding-top: 32px;
   padding-bottom: 20px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/index-can-mobile@2x.png") 50% 72% no-repeat, url("../img/index-background-mobile@2x.jpg") 50% 0 no-repeat, linear-gradient(to top, #ffffff, #ffffff 195px, $color-primary-dark 195px);
+    background-size: 280px 271px, 320px 306px, 100%;
+  }
+
   @include tablet {
     background: #ffffff;
-    padding-bottom: 515px;
+    background: url("../img/index-can-tablet@1x.jpg") 40% 100% no-repeat;
+    background-size: 709px 609px;
+    padding-bottom: 500px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    margin-top: -120px;
+    padding-top: 320px;
+    background: url("../img/index-can-desktop@1x.png") 63% 50% no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary 47%, #ffffff 47%) no-repeat;
+    background-size: 552px 499px, calc(50% - 30px) auto, 100% 90%;
+    padding-bottom: 190px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/index-can-desktop@2x.png") 63% 50% no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary 47%, #ffffff 47%) no-repeat;
+      background-size: 552px 499px, calc(50% - 30px) auto, 100% calc(50vw - 60px);
+    }
   }
 }
 
@@ -15,7 +39,11 @@
   @include content-center;
 
   @include tablet {
-    padding: 0 120px;
+    padding: 0 calc((100% - 568px) / 2);
+  }
+
+  @include desktop {
+    padding: 0 calc((100% - 1070px) / 2);
   }
 }
 
@@ -23,12 +51,16 @@
   @include titletext(36px, 36px);
   font-weight: 400;
   color: inherit;
-  margin-bottom: 11px;
+  margin-bottom: 30px;
 
   @include tablet {
     @include titletext(60px, 60px);
     text-align: left;
     margin-bottom: 46px;
+  }
+
+  @include desktop {
+    max-width: 420px;
   }
 }
 

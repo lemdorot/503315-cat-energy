@@ -26,9 +26,71 @@
   display: block;
   margin-bottom: 26px;
   padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
 
   @include tablet {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.goal__label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px $color-menuline;
+  cursor: pointer;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+    top: 2px;
+  }
+}
+
+.goal__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  display: none;
+
+  @include tablet {
+    width: 18px;
+    height: 18px;
+    top: 13px;
+    left: 11px;
+  }
+}
+
+.goal__choice:checked + .goal__label::after {
+  display: block;
+}
+
+.goal__choice:not(:disabled):focus + .goal__label::before,
+.goal__choice:not(:disabled):hover + .goal__label::before {
+  border-color: $color-line;
+}
+
+.goal__choice:disabled + .goal__label {
+  cursor: auto;
+  opacity: 0.3;
+}
+
+.goal__choice:disabled + .goal__label::before {
+  cursor: auto;
 }
