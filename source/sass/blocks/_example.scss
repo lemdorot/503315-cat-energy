@@ -1,15 +1,17 @@
 .example {
   background-color: $color-background;
-  padding-top: 34px;
-  padding-bottom: 40px;
+  padding-top: 18px;
+  padding-bottom: 36px;
 
   @include tablet {
-    background: linear-gradient(to top, $color-background 50%, #ffffff 50%);
+    background: linear-gradient(to top, $color-background 460px, #ffffff 460px);
+    padding-top: 43px;
+    padding-bottom: 70px;
   }
 
   @include desktop {
-    padding-top: 50px;
-    padding-bottom: 55px;
+    padding-top: 22px;
+    padding-bottom: 42px;
     background: linear-gradient(to top, $color-background 460px, #ffffff 460px);
   }
 }
@@ -24,35 +26,40 @@
 
 .example__heading {
   @include titletext(36px,60px);
-  margin-bottom: 17px;
+  margin-bottom: 23px;
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 73px;
+    margin-bottom: 63px;
   }
 
   @include desktop {
-    margin-bottom: 150px;
+    margin-bottom: 145px;
   }
 }
 
 .example__text {
   @include copytext (14px,18px);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  padding-right: 1px;
 
   @include tablet {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
+    padding-right: 10px;
   }
 
   @include desktop {
-    max-width: 450px;
+    max-width: 449px;
+    margin-bottom: 69px;
   }
 }
 
 .example__stats-wrapper {
+  margin-bottom: 33px;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
@@ -76,6 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-top: 10px;
   }
 
   @include desktop {

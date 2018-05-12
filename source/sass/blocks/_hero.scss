@@ -2,7 +2,7 @@
   color: #ffffff;
   background: url("../img/index-can-mobile@1x.png") 50% 72% no-repeat, url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to top, #ffffff, #ffffff 210px, $color-primary-dark 210px);
   text-align: center;
-  padding-top: 32px;
+  padding-top: 28px;
   padding-bottom: 20px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -11,9 +11,10 @@
   }
 
   @include tablet {
-    background: url("../img/index-can-tablet@1x.jpg") 40% 100% no-repeat;
+    background: url("../img/index-can-tablet@1x.jpg") 48% 100% no-repeat;
     background-size: 709px 609px;
-    padding-bottom: 500px;
+    padding-top: 54px;
+    padding-bottom: 532px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
@@ -21,15 +22,15 @@
   }
 
   @include desktop {
-    margin-top: -120px;
-    padding-top: 320px;
-    background: url("../img/index-can-desktop@1x.png") 63% 50% no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary 47%, #ffffff 47%) no-repeat;
-    background-size: 552px 499px, calc(50% - 30px) auto, 100% 90%;
-    padding-bottom: 190px;
+    margin-top: -170px;
+    padding-top: 222px;
+    background: url("../img/index-can-desktop@1x.png") 560px 140px no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary-dark calc(#{$padding-desktop} + 580px), #ffffff calc(#{$padding-desktop} + 580px)) no-repeat;
+    background-size: 552px 499px, calc(#{$padding-desktop} + 580px) 700px, 100% 90%;
+    padding-bottom: 275px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/index-can-desktop@2x.png") 63% 50% no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary 47%, #ffffff 47%) no-repeat;
-      background-size: 552px 499px, calc(50% - 30px) auto, 100% calc(50vw - 60px);
+      background: url("../img/index-can-desktop@2x.png") 560px 140px no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary-dark calc(#{$padding-desktop} + 580px), #ffffff calc(#{$padding-desktop} + 580px)) no-repeat;
+      background-size: 552px 499px, calc(#{$padding-desktop} + 580px) 700px, 100% 90%;
     }
   }
 }
@@ -38,11 +39,11 @@
   @include content-center;
 
   @include tablet {
-    padding: 0 calc((100% - 568px) / 2);
+    padding: 0 calc((100% - 530px) / 2);
   }
 
   @include desktop {
-    padding: 0 calc((100% - 1070px) / 2);
+    padding: 0 calc((100% - 1062px) / 2);
   }
 }
 
@@ -50,12 +51,12 @@
   @include titletext(36px, 36px);
   font-weight: 400;
   color: inherit;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include tablet {
     @include titletext(60px, 60px);
     text-align: left;
-    margin-bottom: 46px;
+    margin-bottom: 41px;
   }
 
   @include desktop {
@@ -67,12 +68,16 @@
   @include titletext(14px, 14px);
   text-transform: uppercase;
   color: inherit;
-  margin-bottom: 303px;
+  margin-bottom: 300px;
 
   @include tablet {
     @include titletext(20px, 20px);
     text-align: left;
     margin-bottom: 45px;
+  }
+
+  @include desktop {
+    margin-bottom: 52px;
   }
 }
 
@@ -83,7 +88,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 20px;
-    padding: 20px auto;
+    padding: 15px;
     width: 245px;
   }
 }

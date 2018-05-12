@@ -2,12 +2,12 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     padding: 24px 30px 0;
   }
 
   @include desktop {
-    padding: 20px calc((100% - 1220px) / 2);
+    padding: 54px calc((100% - 1220px) / 2);
     position: relative;
   }
 }
@@ -35,10 +35,10 @@
   font-size: 0;
   border: none;
   position: absolute;
-  top: 20px;
+  top: 23px;
   right: 20px;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   background-color: #ffffff;
   cursor: pointer;
 
@@ -50,7 +50,6 @@
 .main-nav .main-nav__toggle {
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main-nav--open .main-nav__toggle {

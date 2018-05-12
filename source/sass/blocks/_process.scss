@@ -1,13 +1,15 @@
 .process {
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 17px;
+  padding-bottom: 19px;
 
   @include tablet {
     border-bottom: 1px solid $color-menuline;
+    padding-top: 44px;
+    padding-bottom: 77px;
   }
 
   @include desktop {
-    padding-top: 60px;
+    padding-top: 70px;
     border: none;
   }
 }
@@ -33,6 +35,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     counter-reset: process-steps;
   }
 
@@ -49,8 +52,9 @@
   @include tablet {
     width: 50%;
     padding-left: 0;
-    padding-top: 120px;
-    padding-right: 100px;
+    padding-top: 107px;
+    padding-right: 60px;
+    width: 324px;
     counter-increment: process-steps;
   }
 
@@ -113,11 +117,37 @@
 
 .process__item:first-child {
   @include tablet {
-    margin-bottom: 140px;
+    margin-bottom: 137px;
   }
 
   @include desktop {
     margin-bottom: 0;
+  }
+}
+
+.process__item::after {
+  @include tablet {
+    content: counter(process-steps);
+    position: absolute;
+    top: 88px;
+    right: 80px;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: $color-background;
+    z-index: -1;
+  }
+
+  @include desktop {
+    top: 90px;
+    right: 0;
+  }
+}
+
+.process__item:first-child::after {
+  right: 95px;
+
+  @include desktop {
+    right: 20px;
   }
 }
 
@@ -136,24 +166,7 @@
   }
 }
 
-.process__text::before {
-  @include tablet {
-    content: counter(process-steps);
-    position: absolute;
-    top: -60px;
-    right: 0;
-    font-size: 280px;
-    font-family: "Oswald", sans-serif;
-    color: $color-background;
-    z-index: -1;
-  }
-
-  @include desktop {
-    top: -40px;
-  }
-}
-
-.process__text:first-child::before {
+.process__text:nth-child(1)::before {
   @include tablet {
     right: 15px;
   }
