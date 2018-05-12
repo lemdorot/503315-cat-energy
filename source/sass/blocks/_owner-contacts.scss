@@ -76,6 +76,7 @@
 }
 
 .owner-contacts__input {
+  @include input;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -84,6 +85,11 @@
   flex-grow: 1;
   margin-left: 15px;
   position: relative;
+}
+
+.owner-contacts__input:active::placeholder,
+.owner-contacts__input:focus::placeholder {
+  opacity: 0;
 }
 
 .owner-contacts__icon {

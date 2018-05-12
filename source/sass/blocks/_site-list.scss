@@ -8,6 +8,12 @@
     flex-wrap: wrap;
     max-width: 70%;
     border: none;
+    padding-right: 0;
+  }
+
+  @include desktop {
+    padding-right: 0;
+    max-width: 50%;
   }
 }
 

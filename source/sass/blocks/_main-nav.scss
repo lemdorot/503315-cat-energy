@@ -7,13 +7,43 @@
   }
 
   @include desktop {
-    padding: 55px calc((100% - 1220px) / 2);
+    padding: 20px calc((100% - 1220px) / 2);
+    position: relative;
   }
 }
 
-.main-nav--inverse {
+.main-nav--inverse .site-list__link {
   @include desktop {
-    background-image: linear-gradient(to right, #ffffff 0, #ffffff calc(50% + 30px), $color-primary calc(50% + 30px), $color-primary 100%);
     color: #ffffff;
+  }
+}
+
+.main-nav--inverse::before {
+  @include desktop {
+    position: absolute;
+    content: "";
+    width: calc(50% - 30px);
+    height: 100px;
+    background-color: $color-primary-dark;
+    top: 0;
+    left: calc(50% + 30px);
+    z-index: -1;
+  }
+}
+
+.main-nav__toggle {
+  font-size: 0;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  background-image: url("../img/icon-close.svg");
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
   }
 }

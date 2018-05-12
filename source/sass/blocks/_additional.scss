@@ -57,6 +57,8 @@
   display: block;
   margin-bottom: 26px;
   padding-left: 45px;
+  position: relative;
+  cursor: pointer;
 
   @include tablet {
     font-size: 20px;
@@ -67,4 +69,65 @@
   @include desktop {
     flex-basis: 25%;
   }
+}
+
+.additional__label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: solid 1px $color-menuline;
+  cursor: pointer;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+    top: 6px;
+  }
+
+  @include desktop {
+    top: 0;
+  }
+}
+
+.additional__label::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: -1px;
+  width: 12px;
+  height: 20px;
+  border: solid $color-primary;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+
+  @include tablet {
+    left: 16px;
+    top: 12px;
+  }
+
+  @include desktop {
+    top: 6px;
+  }
+}
+
+.additional__input:checked + .additional__label::after {
+  display: block;
+}
+
+.additional__input:not(:disabled):focus + .additional__label::before,
+.additional__input:not(:disabled):hover + .additional__label::before {
+  border-color: $color-line;
+}
+
+.additional__input:disabled + .additional_label {
+  cursor: auto;
+  opacity: 0.3;
+}
+
+.additional__input:disabled + .additional_label::before {
+  cursor: auto;
 }

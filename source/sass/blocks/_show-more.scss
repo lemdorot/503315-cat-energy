@@ -10,10 +10,12 @@
     padding: 162px 40px 40px;
     border: 1px solid $color-menuline;
     max-width: 324px;
+    margin-top: 95px;
   }
 
   @include desktop {
     max-width: 245px;
+    padding: 0 38px;
   }
 }
 
@@ -21,9 +23,39 @@
   @include titletext(16px,20px);
   text-transform: uppercase;
   margin-bottom: 12px;
+  position: relative;
 
   @include tablet {
     font-size: 20px;
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    padding: 165px 0 0;
+  }
+}
+
+.show-more__title::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -50px;
+  left: 125px;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  @include tablet {
+    left: 93px;
+    top: -100px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @include desktop {
+    top: 55px;
+    left: 60px;
   }
 }
 
@@ -33,5 +65,11 @@
 
   @include tablet {
     font-size: 16px;
+    padding: 0 30px;
+    margin-bottom: 86px;
+  }
+
+  @include desktop {
+    padding: 0;
   }
 }

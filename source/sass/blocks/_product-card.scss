@@ -9,9 +9,13 @@
 
   @include tablet {
     display: block;
-    padding: 0 40px 40px;
+    padding: 0 0 40px;
     border: none;
     background-image: linear-gradient(to top, $color-background 420px, $color-transparent 421px, $color-transparent 100%);
+  }
+
+  @include desktop {
+    max-width: 245px;
   }
 }
 
@@ -22,8 +26,33 @@
   }
 }
 
+.product-card__pic {
+  width: 140px;
+  height: auto;
+
+  @include tablet {
+    width: 324px;
+    margin-left: calc(50% - 162px);
+  }
+
+  @include desktop {
+    width: 245px;
+    margin-left: calc(50% - 122px);
+  }
+}
+
+.product-card__pic--small {
+  @include tablet {
+    padding-top: 36px;
+  }
+}
+
 .product-card__text-wrapper {
   flex: 1 1 50%;
+
+  @include tablet {
+    padding: 0 40px;
+  }
 }
 
 .product-card__title {
@@ -70,6 +99,15 @@
 }
 
 .product-card__btn {
-  width: 100%; // maybe remove later
+  width: 100%;
   margin-top: 25px;
+
+  @include tablet {
+    width: 244px;
+    margin: 25px auto 0;
+  }
+
+  @include desktop {
+    width: 170px;
+  }
 }

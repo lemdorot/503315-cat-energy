@@ -1,22 +1,52 @@
 .present {
   background-color: $color-primary;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   margin: 39px $padding-mobile 37px;
   position: relative;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @include tablet {
     margin: 39px $padding-tablet 37px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
-    margin: 0;
     padding: 80px 40px 50px;
     max-width: 245px;
+    margin: 0 0 65px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
 .present__icon {
+  fill: #ffffff;
   position: absolute;
+  left: 51%;
+  transform: translateX(-30px);
+  top: 68px;
+
+  @include tablet {
+    left: 88px;
+    transform: translateX(0);
+  }
+
+  @include desktop {
+    left: 95px;
+  }
 }
 
 .present__text {
@@ -27,5 +57,10 @@
   @include tablet {
     padding: 70px 122px 70px 420px;
     text-align: left;
+  }
+
+  @include desktop {
+    text-align: center;
+    padding: 150px 0 0;
   }
 }

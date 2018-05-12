@@ -9,6 +9,8 @@ $color-black: #111111;
 $color-copy: #444444;
 $color-transparent: rgba(1, 1, 1, 0);
 
+$color-error: #ff8282;
+
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
@@ -17,3 +19,6 @@ $padding-mobile: calc((100% - 280px) / 2);
 $padding-tablet: calc((100% - 708px) / 2);
 $padding-desktop: calc((100% - 1220px) / 2);
 $padding-tablet-form: calc((100% - 630px) / 2);
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
