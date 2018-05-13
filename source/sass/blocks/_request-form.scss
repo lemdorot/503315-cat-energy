@@ -12,17 +12,31 @@
   @include tablet {
     display: flex;
     align-items: center;
+    padding: 0 $padding-tablet-form;
+  }
+
+  @include desktop {
+    padding: 0 $padding-desktop;
   }
 }
 
 .request-form__btn {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 
   @include tablet {
+    font-size: 20px;
+    line-height: 20px;
     flex-grow: 1;
     width: auto;
     margin-right: 60px;
+    width: 180px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 180px;
+    margin-right: 80px;
   }
 }
 

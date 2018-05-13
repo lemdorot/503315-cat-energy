@@ -1,17 +1,20 @@
 .goal {
   border: none;
   border-bottom: 1px solid $color-menuline;
-  padding-top: 30px;
+  padding-top: 26px;
 
   @include tablet {
     border: 1px solid $color-menuline;
     margin-left: $padding-tablet-form;
     border-right: none;
-    margin-top: 58px;
+    margin-top: 52px;
+    padding-top: 33px;
+    padding-left: 44px;
   }
 
   @include desktop {
     margin: 0;
+    width: 520px;
     border: 1px solid $color-menuline;
     flex-grow: 1;
   }
@@ -25,7 +28,7 @@
   @include titletext(16px,18px);
   text-transform: uppercase;
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 33px;
   padding-left: 45px;
   position: relative;
   cursor: pointer;
@@ -55,7 +58,8 @@
   @include tablet {
     width: 40px;
     height: 40px;
-    top: 2px;
+    top: -9px;
+    left: -16px;
   }
 }
 
@@ -73,8 +77,8 @@
   @include tablet {
     width: 18px;
     height: 18px;
-    top: 13px;
-    left: 11px;
+    top: 2px;
+    left: -5px;
   }
 }
 

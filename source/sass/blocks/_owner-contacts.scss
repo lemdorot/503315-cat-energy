@@ -1,6 +1,10 @@
 .owner-contacts {
   border: none;
   padding-top: 30px;
+
+  @include tablet {
+    padding-top: 19px;
+  }
 }
 
 .owner-contacts__content-center {
@@ -33,12 +37,13 @@
 
   @include desktop {
     padding-left: $padding-desktop;
+    margin-top: 52px;
   }
 }
 
 .owner-contacts__title-text {
   background-color: #ffffff;
-  max-width: 230px;
+  max-width: 224px;
   display: block;
   padding: 0 20px;
   transform: translate(-20px, 34px);
@@ -63,6 +68,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 20px;
   }
 
   @include desktop {
@@ -82,9 +88,12 @@
   font-size: inherit;
   color: inherit;
   text-transform: uppercase;
-  padding: 15px;
   flex-grow: 1;
-  margin-left: 15px;
+  margin-left: 12px;
+
+  @include tablet {
+    margin-left: 20px;
+  }
 }
 
 .owner-contacts__input:active::placeholder,
@@ -102,7 +111,7 @@
 
     @include tablet {
       top: 20px;
-      right: 23px;
+      right: 18px;
     }
   }
 
@@ -112,7 +121,7 @@
 
     @include tablet {
       top: 17px;
-      right: 19px;
+      right: 18px;
     }
   }
 }
