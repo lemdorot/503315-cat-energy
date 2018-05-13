@@ -24,7 +24,7 @@
   @include desktop {
     margin-top: -170px;
     padding-top: 222px;
-    background: url("../img/index-can-desktop@1x.png") 560px 140px no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary-dark calc(#{$padding-desktop} + 560px), #ffffff calc(#{$padding-desktop} + 560px)) no-repeat;
+    background: url("../img/index-can-desktop@1x.png") 560px 140px no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary-dark calc(#{$padding-desktop} + 570px), #ffffff calc(#{$padding-desktop} + 570px)) no-repeat;
     background-size: 552px 499px, calc(#{$padding-desktop} + 570px) 700px, 100% 90%;
     padding-bottom: 275px;
 

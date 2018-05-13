@@ -22,12 +22,13 @@
   @include desktop {
     position: absolute;
     content: "";
-    width: calc(50% - 30px);
     height: 100px;
     background-color: $color-primary-dark;
     top: 0;
     left: calc(50% + 30px);
     z-index: -1;
+    width: calc(#{$padding-desktop} + 570px);
+    height: 700px;
   }
 }
 
