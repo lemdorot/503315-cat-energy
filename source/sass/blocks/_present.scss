@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin: 39px $padding-mobile 37px;
+  margin: 39px $padding-mobile 34px;
   position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -12,7 +12,7 @@
   }
 
   @include tablet {
-    margin: 39px $padding-tablet 37px;
+    margin: 72px $padding-tablet 79px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -21,7 +21,7 @@
   }
 
   @include desktop {
-    padding: 80px 40px 50px;
+    padding: 38px 40px 50px;
     max-width: 245px;
     margin: 0 0 65px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
@@ -40,7 +40,8 @@
   top: 68px;
 
   @include tablet {
-    left: 88px;
+    left: 90px;
+    top: 62px;
     transform: translateX(0);
   }
 
@@ -52,7 +53,7 @@
 .present__text {
   @include copytext(16px,18px);
   color: #ffffff;
-  padding: 190px 60px 50px;
+  padding: 190px 58px 46px;
 
   @include tablet {
     padding: 70px 122px 70px 420px;

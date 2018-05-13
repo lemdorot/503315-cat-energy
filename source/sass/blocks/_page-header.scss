@@ -26,7 +26,12 @@
   height: 42px;
 
   @include tablet {
-    width: 202px;
+    width: 173px;
+    height: 60px;
+  }
+
+  @include desktop {
+    width: 203px;
     height: 60px;
   }
 }

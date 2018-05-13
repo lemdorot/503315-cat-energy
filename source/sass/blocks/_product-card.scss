@@ -1,8 +1,8 @@
 .product-card {
   @include content-center;
   border-top: 1px solid $color-menuline;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 22px;
+  padding-top: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -11,7 +11,7 @@
     display: block;
     padding: 0 0 40px;
     border: none;
-    background-image: linear-gradient(to top, $color-background 420px, $color-transparent 421px, $color-transparent 100%);
+    background-image: linear-gradient(to top, $color-background 427px, $color-transparent 428px, $color-transparent 100%);
   }
 
   @include desktop {
@@ -22,7 +22,7 @@
 .product-card__pic-link {
   @include tablet {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 37px;
   }
 }
 
@@ -60,14 +60,14 @@
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @include tablet {
     font-size: 20px;
     text-align: center;
     display: block;
     max-width: 140px;
-    margin: 0 auto 30px;
+    margin: 0 auto 17px;
   }
 }
 
@@ -93,18 +93,19 @@
   justify-content: space-between;
 
   @include tablet {
-    padding: 12px 0;
+    padding: 8px 0;
     border-bottom: 1px solid $color-line;
   }
 }
 
 .product-card__btn {
   width: 100%;
-  margin-top: 25px;
+  max-height: 40px;
+  padding-top: 10px;
 
   @include tablet {
     width: 244px;
-    margin: 25px auto 0;
+    margin: 30px auto 0;
   }
 
   @include desktop {

@@ -12,7 +12,7 @@
 .products__item {
   @include tablet {
     flex-grow: 1;
-    margin-bottom: 94px;
+    margin-bottom: 56px;
   }
 
   @include desktop {
