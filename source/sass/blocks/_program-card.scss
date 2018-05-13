@@ -3,38 +3,44 @@
   margin-bottom: 20px;
 
   background-color: $color-background;
-  padding: 25px;
+  padding: 30px 22px 22px 20px;
 
   @include tablet {
-    padding: 80px 280px 63px 50px;
+    padding: 79px 280px 63px 52px;
     position: relative;
+    margin-bottom: 28px;
   }
 
   @include desktop {
-    padding: 80px 60px 65px;
+    padding: 72px 52px 65px;
     max-width: 570px;
+    margin-bottom: 0;
   }
+}
+
+.program-card:last-child {
+  margin-bottom: 0;
 }
 
 .program-card__title {
   @include titletext(24px,37px);
   text-transform: uppercase;
-  margin-bottom: 24px;
-  padding-left: 69px;
+  margin-bottom: 29px;
+  padding-left: 70px;
   position: relative;
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
     padding-left: 0;
-    margin-bottom: 33px;
+    margin-bottom: 24px;
   }
 
   @include desktop {
     font-size: 36px;
     line-height: 37px;
-    padding-left: 166px;
-    margin-bottom: 80px;
+    padding-left: 162px;
+    margin-bottom: 74px;
   }
 
   &::before {
@@ -50,14 +56,14 @@
     @include tablet {
       width: 200px;
       height: 200px;
-      top: 0;
-      left: 400px;
+      top: 14px;
+      left: 395px;
     }
 
     @include desktop {
       width: 100px;
       height: 100px;
-      left: 0;
+      left: -3px;
       top: -30px;
     }
   }
@@ -71,24 +77,24 @@
 }
 
 .program-card__title--slim::after {
-  left: 12px;
-  top: -5px;
+  left: 10px;
+  top: -10px;
   width: 52px;
-  height: 52px;
+  height: 50px;
   background-image: url("../img/icon-cat-slim.svg");
 
   @include tablet {
     width: 140px;
-    height: 194px;
-    top: 0;
-    left: 430px;
+    height: 193px;
+    top: 6px;
+    left: 424px;
   }
 
   @include desktop {
     width: 70px;
     height: 97px;
-    top: -30px;
-    left: 10px;
+    top: -35px;
+    left: 13px;
   }
 }
 
@@ -109,27 +115,35 @@
   @include desktop {
     width: 134px;
     height: 56px;
-    top: -10px;
-    left: -30px;
+    top: -8px;
+    left: -20px;
   }
 }
 
 .program-card__description {
   @include copytext(14px,18px);
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid $color-line;
+  margin-bottom: 22px;
 
   @include tablet {
     font-size: 16px;
     line-height: 24px;
-    border: none;
+    margin-bottom: 57px;
   }
 
   @include desktop {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.program-card__description--pro {
+  @include tablet {
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    padding-right: 0;
   }
 }
 
@@ -137,6 +151,9 @@
   @include titletext(16px,16px);
   text-decoration: none;
   text-transform: uppercase;
+  border-top: 1px solid $color-line;
+  padding-top: 19px;
+  display: block;
   position: relative;
 
   &:active {
@@ -146,6 +163,9 @@
   @include tablet {
     font-size: 20px;
     line-height: 20px;
+    border: none;
+    padding: 0;
+    max-width: 150px;
   }
 }
 
@@ -154,14 +174,14 @@
   position: absolute;
   width: 24px;
   height: 11px;
-  top: 8px;
-  left: 100px;
+  top: 22px;
+  left: 96px;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 
   @include tablet {
-    top: 11px;
-    left: 120px;
+    top: 5px;
+    left: 130px;
   }
 }
 

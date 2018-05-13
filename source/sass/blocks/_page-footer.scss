@@ -4,7 +4,11 @@
   padding-bottom: 40px;
 
   @include tablet {
-    padding: 70px 30px;
+    padding: 34px 30px;
+  }
+
+  @include desktop {
+    padding: 40px 30px;
   }
 }
 
@@ -19,6 +23,10 @@
     align-items: center;
     padding: 0;
   }
+
+  @include desktop {
+    @include content-center;
+  }
 }
 
 .page-footer__logo-text {
@@ -27,5 +35,7 @@
 
   @include tablet {
     margin: 0;
+    width: 132px;
+    padding: 0;
   }
 }

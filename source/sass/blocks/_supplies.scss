@@ -1,8 +1,18 @@
+.supplies {
+  @include tablet {
+    padding-top: 12px;
+  }
+
+  @include desktop {
+    padding-top: 24px;
+  }
+}
+
 .supplies__heading {
   padding-left: $padding-mobile;
   border-bottom: 2px solid $color-primary;
-  transform: translateY(-10px);
-  margin-bottom: 17px;
+  transform: translateY(-14px);
+  margin-bottom: 30px;
 
   @include tablet {
     padding-left: $padding-tablet;
@@ -14,14 +24,14 @@
   @include titletext(24px,24px);
   display: inline-block;
   background-color: #ffffff;
-  transform: translate(-20px, 10px);
+  transform: translate(-20px, 14px);
   padding-left: 20px;
   padding-right: 24px;
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 35px;
+    padding: 0 40px;
     transform: translate(-5px, 10px);
   }
 
@@ -40,6 +50,7 @@
 
   @include desktop {
     width: 895px;
+    margin: 0;
   }
 }
 
@@ -53,15 +64,15 @@
 
 .supplies__item {
   border-top: 1px solid $color-line;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 14px;
 
   &:last-child {
     border-bottom: 1px solid $color-line;
   }
 
   @include tablet {
-    padding: 30px 40px;
+    padding: 27px 40px 24px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -69,16 +80,17 @@
   @include desktop {
     flex-wrap: nowrap;
     align-items: center;
-    padding: 18px 40px;
+    padding: 13px 0;
   }
 }
 
 .supplies__title {
   @include titletext(16px,16px);
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 
   @include tablet {
+    font-size: 20px;
     display: inline-block;
     margin-bottom: 0;
   }
@@ -101,8 +113,7 @@
 
   @include desktop {
     display: flex;
-    flex-grow: 1;
-    max-width: 290px;
+    width: 290px;
   }
 }
 
@@ -111,6 +122,7 @@
   @include copytext(14px,14px);
 
   @include tablet {
+    font-size: 16px;
     text-align: right;
   }
 
@@ -134,7 +146,11 @@
 
 .supplies__btn {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 12px;
+
+  @include tablet {
+    margin-top: 25px;
+  }
 
   @include desktop {
     max-width: 245px;

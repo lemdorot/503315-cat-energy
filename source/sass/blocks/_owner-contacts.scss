@@ -1,6 +1,10 @@
 .owner-contacts {
   border: none;
   padding-top: 30px;
+
+  @include tablet {
+    padding-top: 19px;
+  }
 }
 
 .owner-contacts__content-center {
@@ -33,12 +37,13 @@
 
   @include desktop {
     padding-left: $padding-desktop;
+    margin-top: 52px;
   }
 }
 
 .owner-contacts__title-text {
   background-color: #ffffff;
-  max-width: 230px;
+  max-width: 224px;
   display: block;
   padding: 0 20px;
   transform: translate(-20px, 34px);
@@ -58,10 +63,12 @@
   margin-bottom: 14px;
   display: flex;
   align-items: baseline;
+  position: relative;
 
   @include tablet {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 20px;
   }
 
   @include desktop {
@@ -81,10 +88,12 @@
   font-size: inherit;
   color: inherit;
   text-transform: uppercase;
-  padding: 15px;
   flex-grow: 1;
-  margin-left: 15px;
-  position: relative;
+  margin-left: 12px;
+
+  @include tablet {
+    margin-left: 20px;
+  }
 }
 
 .owner-contacts__input:active::placeholder,
@@ -94,4 +103,34 @@
 
 .owner-contacts__icon {
   position: absolute;
+  fill: $color-copy;
+
+  &--mail {
+    top: 18px;
+    right: 15px;
+
+    @include tablet {
+      top: 20px;
+      right: 18px;
+    }
+  }
+
+  &--phone {
+    top: 14px;
+    right: 12px;
+
+    @include tablet {
+      top: 17px;
+      right: 18px;
+    }
+  }
+}
+
+.owner-contacts__input:focus + .owner-contacts__icon,
+.owner-contacts__input:invalid:focus + .owner-contacts__icon {
+  fill: $color-primary;
+}
+
+.owner-contacts__input:not(:placeholder-shown):invalid + .owner-contacts__icon {
+  fill: $color-error;
 }

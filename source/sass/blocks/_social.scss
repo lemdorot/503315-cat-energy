@@ -5,6 +5,8 @@
 
   @include tablet {
     width: auto;
+    border: none;
+    margin-left: 26px;
   }
 }
 
@@ -12,4 +14,47 @@
   list-style: none;
   display: flex;
   justify-content: center;
+}
+
+.social__item {
+  padding-top: 25px;
+  padding-bottom: 16px;
+  margin: 0 18px;
+  width: 21px;
+}
+
+.social__link {
+  display: inline-block;
+}
+
+.social__icon {
+  fill: $color-copy;
+
+  @include tablet {
+    &--vkontakte {
+      width: 34px;
+      height: 18px;
+      margin-top: 2px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+      margin-top: -2px;
+    }
+  }
+}
+
+.social__icon:hover {
+  fill: $color-primary;
+}
+
+.social__icon:active {
+  fill: $color-primary;
+  opacity: 0.3;
 }

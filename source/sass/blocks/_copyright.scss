@@ -1,10 +1,50 @@
 .copyright {
   margin-top: 20px;
+  width: 280px;
+
+  @include tablet {
+    padding-top: 15px;
+    margin: 0;
+    width: 165px;
+  }
+
+  @include desktop {
+    padding-top: 2px;
+  }
 }
 
 .copyright__link {
   @include copytext(16px,16px);
   text-decoration: none;
+  color: $color-copy;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__logo {
+  padding-top: 2px;
+  fill: $color-copy;
+
+  @include tablet {
+    padding-top: 5px;
+    margin-left: 20px;
+  }
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: $color-primary;
+}
+
+.copyright__link:active .copyright__logo {
+  fill: $color-primary;
+  opacity: 0.5;
+}
+
+.copyright__link:hover {
+  opacity: 0.8;
+}
+
+.copyright__link:active {
+  opacity: 0.6;
 }

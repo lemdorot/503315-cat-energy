@@ -1,13 +1,13 @@
 .contacts {
   background-color: $color-background;
-  padding-top: 32px;
+  padding-top: 28px;
 
   &--index {
     background-color: #ffffff;
   }
 
   @include tablet {
-    padding-top: 70px;
+    padding-top: 64px;
   }
 
   @include desktop {
@@ -28,7 +28,7 @@
 }
 
 .contacts__card {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   display: flex;
 
   @include tablet {
@@ -41,7 +41,7 @@
     top: 95px;
     left: calc((100% - 1220px) / 2);
     background-color: #ffffff;
-    padding: 70px 80px;
+    padding: 65px 75px 60px;
     min-width: 570px;
   }
 }
@@ -66,6 +66,10 @@
     flex-direction: column;
     text-align: right;
     max-width: 170px;
+  }
+
+  @include desktop {
+    text-align: left;
   }
 }
 
