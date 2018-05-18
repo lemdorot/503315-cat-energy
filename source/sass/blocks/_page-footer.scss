@@ -1,6 +1,6 @@
 .page-footer {
   background-color: $color-background;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 40px;
 
   @include tablet {
@@ -31,7 +31,9 @@
 
 .page-footer__logo-text {
   display: block;
-  margin-bottom: 30px;
+  width: 130px;
+  height: 30px;
+  margin-bottom: 28px;
 
   @include tablet {
     margin: 0;
