@@ -6,15 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
-  </script>
-  <script src="picturefill.js" async></script>
   <title>HTML Academy: Кэт энерджи Главная</title>
 </head>
 
 <body>
+  <div style="display:none">
+   <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--inverse main-nav--nojs">
       <div class="page-header__wrapper">
@@ -109,8 +107,8 @@
           </div>
         </div>
         <div class="example__wrapper slider">
-          <input type="radio" class="visually-hidden slider__before" name="slider-toggle" id="before" checked>
-          <input type="radio" class="visually-hidden slider__after" name="slider-toggle" id="after">
+          <input type="radio" class="visually-hidden slider__before" name="slider-toggle" id="before" value="before" checked>
+          <input type="radio" class="visually-hidden slider__after" name="slider-toggle" id="after" value="after">
           <div class="slider__images">
             <div class="slider__image slider__image--before">
               <picture class="slider__image-wrapper">
@@ -120,7 +118,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="example__cat-pic slider__cat-pic" src="img/before-mobile@1x.png" alt="Fat cat" width="320" height="240" srcset="img/before-mobile@2x.png 2x">
+                <img class="slider__cat-pic slider__cat-pic--before" src="img/before-mobile@1x.png" alt="Fat cat" width="320" height="240" srcset="img/before-mobile@2x.png 2x">
               </picture>
             </div>
             <div class="slider__image slider__image--after">
@@ -131,16 +129,16 @@
 
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="example__cat-pic slider__cat-pic" src="img/after-mobile@1x.png" alt="Slim cat" width="320" height="240" srcset="img/after-mobile@2x.png 2x">
+                <img class="slider__cat-pic slider__cat-pic--after" src="img/after-mobile@1x.png" alt="Slim cat" width="320" height="240" srcset="img/after-mobile@2x.png 2x">
               </picture>
             </div>
           </div>
           <div class="slider__controls">
-            <label class="slider__label" for="before">Было</label>
+            <label class="slider__label slider__label--before" for="before">Было</label>
             <div class="slider__scale">
-              <div class="slider__indicator"></div>
+              <div class="slider__indicator"><span class="visually-hidden">Переключатель слайдера</span></div>
             </div>
-            <label class="slider__label" for="after">Стало</label>
+            <label class="slider__label slider__label--after" for="after">Стало</label>
           </div>
         </div>
       </div>
@@ -178,7 +176,7 @@
             </a></li>
           <li class="social__item"><a href="https://facebook.com" class="social__link"><span class="visually-hidden">Facebook</span>
             <svg class="social__icon social__icon--facebook" width="10" height="19">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a></li>
         </ul>
@@ -187,12 +185,13 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           HTML Academy
           <svg class="copyright__logo" width="30" height="36">
-            <use xlink:href="img/sprite.svg#icon-academy-logo"></use>
+            <use xlink:href="#icon-academy-logo"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.min.js" defer></script>
   <script src="js/script.js"></script>
 </body>

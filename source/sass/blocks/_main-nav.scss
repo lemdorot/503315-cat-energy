@@ -48,6 +48,11 @@
   }
 }
 
+.main-nav__toggle:active,
+.main-nav__toggle:focus {
+  outline: none;
+}
+
 .main-nav .main-nav__toggle {
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;

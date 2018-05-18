@@ -49,6 +49,7 @@
 .contacts__title {
   @include titletext(16px,20px);
   text-transform: uppercase;
+  flex: 1 1 50%;
 
   @include tablet {
     font-size: 20px;
@@ -59,6 +60,7 @@
 
 .contacts__address {
   @include copytext(14px,20px);
+  flex: 1 1 50%;
 
   @include tablet {
     font-size: 16px;
